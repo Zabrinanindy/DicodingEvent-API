@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DicodingEvents</string>
+    <string name="name_event">Nama Event</string>
+    <string name="date_event">Tanggal Event</string>
+    <string name="by_event">Oleh</string>
+    <string name="city_event">Lokasi Event</string>
+    <string name="quota_event">Sisa Kuota</string>
+    <string name="title_activity_bottom_nav">bottomNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_upcoming">Upcoming</string>
+    <string name="title_finished">Finished</string>
+    <string name="searchbar_hint">Masukkan nama event</string>
+    <string name="upcomingtext">Upcoming Events</string>
+    <string name="finishedtext">Finished Events</string>
+    <string name="summaryText">Ringkasan Acara</string>
+    <string name="detailSummary">Lorem Ipsum Dollar</string>
+    <string name="deskripsiText">Deskripsi Acara</string>
+    <string name="detailDeskripsi">Lorem Ipsum Dolar</string>
+    <string name="detailDate">DD/MM/YY 00.00</string>
+    <string name="detailQuota">000</string>
+    <string name="detailOwner">dicoding</string>
+    <string name="detailCity">Online</string>
+</resources>
