@@ -15,7 +15,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="152dp"
+        android:layout_height="wrap_content"
         android:padding="8dp">
 
         <ImageView
@@ -34,9 +34,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/tvEventTime"
@@ -52,12 +50,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/tvEventOwner"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tvImageEvent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_favorite"
+            app:layout_constraintStart_toEndOf="@+id/tvImageEvent"
             app:layout_constraintTop_toBottomOf="@id/tvEventName"
             tools:text="@string/date_event" />
 
@@ -67,14 +64,30 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="24dp"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tvImageEvent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_favorite"
+            app:layout_constraintStart_toEndOf="@+id/tvImageEvent"
             app:layout_constraintTop_toBottomOf="@id/tvEventTime"
             tools:text="@string/by_event" />
+
+        <ImageView
+            android:id="@+id/tv_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/add_favorite"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:tag="Not Saved"
+            app:layout_constraintBottom_toTopOf="@+id/tvImageEvent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvEventOwner"
+            app:layout_constraintTop_toBottomOf="@+id/tvEventName"
+            app:layout_constraintVertical_bias="0.272" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

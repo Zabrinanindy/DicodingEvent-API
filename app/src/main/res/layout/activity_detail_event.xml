@@ -38,6 +38,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/placeholder_image" />
 
+        <ImageView
+            android:id="@+id/tvFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/add_favorite"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:tag="Not Saved"
+            app:layout_constraintEnd_toEndOf="@+id/tvImageEvent"
+            app:layout_constraintTop_toTopOf="@+id/tvImageEvent" />
+
         <TextView
             android:id="@+id/nameEvent"
             android:layout_width="match_parent"
@@ -48,7 +60,6 @@
             android:layout_marginBottom="8dp"
             android:text="@string/name_event"
             android:textAlignment="center"
-            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/ownerInfo"
@@ -66,7 +77,6 @@
             android:layout_marginEnd="16dp"
             android:text="@string/summaryText"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/detailSummary"
@@ -83,7 +93,6 @@
             android:layout_marginEnd="16dp"
             android:text="@string/deskripsiText"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/detailDeskripsi"
@@ -100,7 +109,6 @@
             android:layout_marginBottom="8dp"
             android:text="@string/detailSummary"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/deskripsiEvent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +124,6 @@
             android:layout_marginBottom="24dp"
             android:text="@string/detailDeskripsi"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
             app:layout_constraintEnd_toEndOf="parent"
@@ -132,7 +139,6 @@
             android:layout_marginBottom="8dp"
             android:text="@string/by_event"
             android:textAlignment="center"
-            android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/tableLayout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -146,7 +152,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/summaryEvent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -163,7 +168,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:text="@string/date_event"
-                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
                 <TextView
@@ -173,7 +177,6 @@
                     android:layout_weight="1"
                     android:text="@string/detailDate"
                     android:textAlignment="textStart"
-                    android:textColor="@color/black"
                     android:textSize="14sp" />
             </TableRow>
 
@@ -188,7 +191,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:text="@string/city_event"
-                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
                 <TextView
@@ -198,7 +200,6 @@
                     android:layout_weight="1"
                     android:text="@string/detailCity"
                     android:textAlignment="textStart"
-                    android:textColor="@color/black"
                     android:textSize="14sp" />
             </TableRow>
 
@@ -213,7 +214,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:text="@string/quota_event"
-                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
                 <TextView
@@ -223,7 +223,6 @@
                     android:layout_weight="1"
                     android:text="@string/detailQuota"
                     android:textAlignment="textStart"
-                    android:textColor="@color/black"
                     android:textSize="14sp" />
             </TableRow>
         </TableLayout>
@@ -237,7 +236,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="100dp"
-            android:text="Register"
+            android:text="@string/register"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

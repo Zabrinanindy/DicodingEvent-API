@@ -1,24 +1,23 @@
-package com.aplikasi.dicodingevents.data.response
+package com.aplikasi.dicodingevents.data.remote.response
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
+data class EventResponse(
 
-data class DetailEventResponse(
+    @field:SerializedName("listEvents")
+	val listEvents: List<ListEventsItem> = listOf(),
 
-	@field:SerializedName("error")
+    @field:SerializedName("error")
 	val error: Boolean? = null,
 
-	@field:SerializedName("message")
-	val message: String? = null,
-
-	@field:SerializedName("event")
-	val event: Event? = null
+    @field:SerializedName("message")
+	val message: String? = null
 )
 
 @Parcelize
-data class Event(
+data class ListEventsItem(
 
 	@field:SerializedName("summary")
 	val summary: String? = null,

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DicodingEvents</string>
+    <string name="add_favorite">Tambahkan ke favorit</string>
+    <string name="register">Register</string>
     <string name="name_event">Nama Event</string>
     <string name="date_event">Tanggal Event</string>
     <string name="by_event">Oleh</string>
@@ -9,6 +11,10 @@
     <string name="title_home">Home</string>
     <string name="title_upcoming">Upcoming</string>
     <string name="title_finished">Finished</string>
+    <string name="title_favorite">Favorit</string>
+    <string name="title_settings">Settings</string>
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="tvEmptyData">Tidak ada event yang difavoritkan</string>
     <string name="searchbar_hint">Masukkan nama event</string>
     <string name="upcomingtext">Upcoming Events</string>
     <string name="finishedtext">Finished Events</string>
